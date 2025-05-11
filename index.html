@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cek Gempa Terkini - Hanz</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #f3f4f6;
+      color: #111;
+    }
+
+    header, footer {
+      background: #1f2937;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    header img {
+      height: 30px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    h1 {
+      font-size: 26px;
+      display: inline;
+    }
+
+    .powered {
+      font-size: 14px;
+      margin-top: 5px;
+      display: block;
+      color: #ccc;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .gempa-card {
+      background: #fff;
+      border-left: 5px solid #ef4444;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    .gempa-card .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .gempa-card .title img {
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    .gempa-info {
+      margin-left: 28px;
+      line-height: 1.6;
+    }
+
+    .blink-status {
+      width: 12px;
+      height: 12px;
+      background: red;
+      border-radius: 50%;
+      box-shadow: 0 0 15px red;
+      animation: blink 1s infinite alternate;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 1;
+        box-shadow: 0 0 10px red;
+      }
+      100% {
+        opacity: 0.4;
+        box-shadow: 0 0 4px red;
+      }
+    }
+
+    .copy-btn {
+      margin-top: 15px;
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .copy-btn:hover {
+      background: #1e40af;
+    }
+
+    footer {
+      font-size: 14px;
+    }
+
+    .info-icon {
+      color: #2563eb;
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://data.bmkg.go.id/include/assets/img/gempa.svg" alt="Logo BMKG"/>
+    <h1>Cek Gempa Terkini Hanz - BMKG</h1>
+    <div class="powered">Powered by: raihan_official0307 | API by: BMKG</div>
+  </header>
+
+  <div class="container" id="gempa-container">
+    <!-- Data gempa akan dimasukkan di sini oleh JavaScript -->
+  </div>
+
+  <footer>
+    &copy; 2025 | Powered by: <strong>raihan_official0307</strong> | API by: <a href="https://data.bmkg.go.id" target="_blank" style="color:#93c5fd;">BMKG</a>
+  </footer>
+<script src="api.js"></script>
+  </body>
+</html>
