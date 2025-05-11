@@ -1,4 +1,4 @@
- Fungsi membuat kartu gempa
+// Fungsi membuat kartu gempa
     function createGempaCard(item, pinned = false) {
       const infoText = `Tanggal: ${item.Tanggal}\nJam: ${item.Jam}\nMagnitudo: ${item.Magnitude}\nKedalaman: ${item.Kedalaman}\nLokasi: ${item.Wilayah}\nKoordinat: ${item.Coordinates}\nPotensi: ${item.Potensi}`;
       const card = document.createElement('div');
