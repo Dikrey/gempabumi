@@ -1,5 +1,3 @@
----
-
 # Cek Gempa Terkini ⚠️🌍
 
 Website monitoring gempa bumi real-time di Indonesia dengan UI modern & animasi status darurat.
