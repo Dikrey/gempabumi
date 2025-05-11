@@ -4,7 +4,7 @@
       const card = document.createElement('div');
       card.className = 'gempa-card';
       card.innerHTML = `
-        ${pinned ? '<div class="pin-label">> Gempa Terbaru (New)</div>' : ''}
+        ${pinned ? '<div class="pin-label">📍Gempa Terbaru (Real Time)</div>' : ''}
         <div class="title">
           <img src="https://data.bmkg.go.id/include/assets/img/gempa.svg" alt="gempa icon"/>
           <strong>${item.Tanggal} - ${item.Jam}</strong>
