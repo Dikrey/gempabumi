@@ -1,4 +1,4 @@
-// Fungsi membuat kartu gempa
+
     function createGempaCard(item, pinned = false) {
       const infoText = `Tanggal: ${item.Tanggal}\nJam: ${item.Jam}\nMagnitudo: ${item.Magnitude}\nKedalaman: ${item.Kedalaman}\nLokasi: ${item.Wilayah}\nKoordinat: ${item.Coordinates}\nPotensi: ${item.Potensi}`;
       const card = document.createElement('div');
@@ -23,7 +23,7 @@
       return card;
     }
 
-    // Pinned terbaru dari autogempa
+ 
     fetch('https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json')
       .then(res => res.json())
       .then(data => {
@@ -33,7 +33,7 @@
         pinnedContainer.appendChild(card);
       });
 
-    // Gempa lainnya dari gempaterkini
+    
     fetch('https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json')
       .then(res => res.json())
       .then(data => {
@@ -43,7 +43,7 @@
           container.appendChild(card);
         });
 
-        // Fungsi tombol salin
+        //salin
         document.querySelectorAll('.copy-btn').forEach(button => {
           button.addEventListener('click', () => {
             const text = button.getAttribute('data-text');
